@@ -1,0 +1,43 @@
+/* .add-to-cart {
+    background-color: azure;
+    margin-left: 20px;
+    width: 120px;
+    height: 50px;
+}
+
+.buy-now {
+    background-color: rgba(227, 227, 22, 0.795);
+    margin-left: 100px;
+    width: 120px;
+    height: 50px;
+} */
+
+.card {
+    position: relative;
+    transition: transform 0.7s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    /* Enlarge the card on hover */
+}
+
+.card:hover::before {
+    content: "Babies And Kids";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(195, 191, 191, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.footer-page {
+    margin-top: 2%;
+}
+
+.navb {
+    margin-bottom: 2%;
+}
